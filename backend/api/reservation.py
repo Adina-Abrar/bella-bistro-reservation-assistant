@@ -20,7 +20,10 @@ from backend.services.reservation_service import (
 )
 
 # ADD THIS LINE
-router = APIRouter()
+router = APIRouter(
+    prefix="/reservation",
+    tags=["Reservation"],
+)
 
 
 @router.post("/check-availability")
