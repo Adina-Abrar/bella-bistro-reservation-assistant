@@ -31,3 +31,15 @@ class ModifyReservationRequest(BaseModel):
 class CancelReservationRequest(BaseModel):
     reservation_id: str | None = None
     phone: str | None = None
+
+class ModifyReservationRequest(BaseModel):
+    reservation_id: str | None = None
+    phone: str | None = None
+
+    reservation_date: str | None = None
+    reservation_time: str | None = None
+    guest_count: int | None = None
+
+class CancelReservationRequest(BaseModel):
+    reservation_id: str | None = None
+    phone: str | None = None
